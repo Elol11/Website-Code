@@ -83,36 +83,12 @@ nav:hover{
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
-}
-
-.row2{
-    display:flex;
-    width: 100%;
-}
-
-.menuopenerbox{
-    height:120px;
-    width:6%;
-    background-color: rgb(221, 34, 34);
-}
-
-.websitelogobox{
-    height: 120px;
-    width: 6%;
-    background-color: blueviolet;
 }
 
 .websitesearchbarbox{
     height:120px;
-    width:82%;
+    width:100%;
     background-color: rgb(255, 0, 212);
-}
-
-.settingsbox{
-    height: 120px;
-    width: 6%;
-    background-color: blue;
 }
 
 .search-container{
@@ -121,33 +97,7 @@ nav:hover{
     background-color: aqua;
     border-radius: 15px;
     margin-top: 10px;
-    margin-left: 25%;
-}
-
-.SideBox{
-    height: 850px;
-    width:228px;
-    background-color: brown;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-.HomeBTN{
-    height: 80px;
-    width: 80px;
-    margin: 15%;
-}
-
-.SettingsIcon{
-    height: 80px;
-    width: 80px;
-    margin: 15%;
-}
-
-.ThreeLines{
-    width: 80px;
-    height: 80px;
-    margin: 15%;
+    margin-left: 30%;
 }
 
 .SearchBarInput{
