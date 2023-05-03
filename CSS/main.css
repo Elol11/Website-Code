@@ -1,0 +1,92 @@
+body{
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    display:flex;
+    width: 100%;
+}
+
+.row1{
+    display:flex;
+    width: 100%;
+}
+
+.row2{
+    display:flex;
+    width: 100%;
+}
+
+.menuopenerbox{
+    height:120px;
+    width:6%;
+    background-color: rgb(221, 34, 34);
+    margin-bottom: 20px;
+}
+
+.websitelogobox{
+    height: 120px;
+    width: 6%;
+    background-color: blueviolet;
+    margin-bottom: 20px;
+}
+
+.websitesearchbarbox{
+    height:120px;
+    width:82%;
+    background-color: rgb(255, 0, 212);
+    margin-bottom: 20px;
+}
+
+.settingsbox{
+    height: 120px;
+    width: 6%;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+.search-container{
+    height:100px;
+    width:49%;
+    background-color: aqua;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 0.5%;
+    align-content: center;
+}
+
+.titlebox{
+    height:120px;
+    width:50%;
+    background-color: brown;
+    border-radius: 15px;
+    margin-left: 0.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.infobox{
+    height:500px;
+    width:50%;
+    background-color: aqua;
+    border-radius: 15px;
+    margin-left: 0.5%;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.HomeBTN{
+    height: 80px;
+    width: 80px;
+    margin: 15%;
+}
+
+.SettingsIcon{
+    height: 80px;
+    width: 80px;
+    margin: 15%;
+}
