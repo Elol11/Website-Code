@@ -1,0 +1,136 @@
+body{
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 90px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1); 
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 10px;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.fa{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+a:hover{
+    background: #eee;
+}
+
+nav:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+}
+
+.row{
+    display:flex;
+    width: 100%;
+}
+
+.row1{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.websitesearchbarbox{
+    height:120px;
+    width:100%;
+    background-color: rgb(255, 0, 212);
+}
+
+.search-container{
+    height:100px;
+    width:40%;
+    background-color: aqua;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 30%;
+}
+
+.SearchBarInput{
+    width:85%;
+    height: 50px;
+    margin-top: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    float: left;
+    margin-left: 0.5%;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.SubmitButton{
+    width: 12.40%;
+    height: 52px;
+    margin-top: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    float: right;
+    margin-right: 0.5%;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.SearchIcon{
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
