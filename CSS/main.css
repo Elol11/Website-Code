@@ -1,7 +1,16 @@
 body{
-    background-color:white;
+    color: #fff;
     margin: 0;
     padding: 0;
+}
+
+.color-buttons {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
 }
 
 nav{
@@ -15,50 +24,34 @@ nav{
     overflow: hidden;
     transition: width 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1); 
-}
-
-.logo{
-    text-align: center;
+    margin-left: 0px;
     display: flex;
-    transition: all 0.5s ease;
-    margin: 10px 0 0 10px;
-}
-
-.logo img{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-}
-
-.logo span{
-    font-weight: bold;
-    padding-left: 15px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-a{
-    position: relative;
-    color: rgb(85, 83, 83);
-    font-size: 14px;
-    display: table;
-    width: 300px;
-    padding: 10px;
-}
-
-.fas{
-    position: relative;
-    width: 70px;
-    height: 40px;
-    top: 14px;
-    font-size: 20px;
-    text-align: center;
+    z-index: index 0;
 }
 
 .nav-item{
-    position: relative;
-    top: 12px;
-    margin-left: 10px;
+    position: absolute;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.logo img{
+    height: 45px;
+    width: 45px;
+    padding-left: 20px;
+}
+
+.logo img:hover{
+    -webkit-filter: drop-shadow(1px 1px 5px #222);
+    filter: drop-shadow(1px 1px 5px #222);
 }
 
 a:hover{
@@ -85,52 +78,233 @@ nav:hover{
     font-family: "Poppins", sans-serif;
 }
 
+.row2{
+    display: flex;
+    width: 100%;
+}
+
+.title{
+    padding-top: 90px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.intro{
+    font-size: 24px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.introduction{
+    text-align: justify;
+    font-size: 18px;
+}
+
 .websitesearchbarbox{
     height:120px;
     width:100%;
-    background-color: rgb(255, 0, 212);
+    background-color: rgb(212, 64, 64);
 }
 
 .search-container{
     height:100px;
     width:40%;
-    background-color: aqua;
+    background-color: rgb(212, 64, 64);
     border-radius: 15px;
     margin-top: 10px;
     margin-left: 30%;
 }
 
 .SearchBarInput{
-    width:85%;
+    width:99%;
     height: 50px;
     margin-top: 20px;
     border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    float: left;
-    margin-left: 0.5%;
-    margin-right: 0px;
-    padding-right: 0px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(187, 60, 60);
+    font-size: 20px;
+    text-decoration-color: black;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchBarInput:hover{
+    background-color:rgb(167, 55, 55);
 }
 
 .SubmitButton{
-    width: 12.40%;
-    height: 52px;
-    margin-top: 20px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    float: right;
-    margin-right: 0.5%;
-    background-color: white;
-    border-color: black;
-    border-style: solid;
-    border-width: 2px;
-    margin-left: 0px;
-    padding-left: 0px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #a75353;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top: 32px;
+    right: 590px;
 }
 
 .SearchIcon{
+    width: 25px;
+}
+
+.SubmitButton:hover{
+    background-color: #8a4242;
+}
+
+.websitetextbox{
+    height: 320px;
+    width: 425px;
+    background-color: White;
+    margin-left: 125px;
+    padding-right: 25px;
+    text-decoration: #000;
+}
+
+.navbox{
+    width: 280px;
+    height: 50px;
+    position: relative;
+    right: 40px;
+    background-color: #fff;
+    display: flex;
+}
+
+.navbox:hover{
+    background-color: #d3d1d1;
+}
+
+.switchbox{
+    height: 50px;
+    width: 50px;
+    background-color:rgb(187, 60, 60);
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: index 0;
+}
+
+/* Center the dropdown container */
+.dropdown {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 2;
+  }
+
+  .dropdown img{
     width: 40px;
     height: 40px;
-    margin-top: 8px;
-    margin-left: 15px;
-}
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    pointer-events: none;
+  }
+  
+  /* Style the button that toggles the dropdown */
+  .dropdown button {
+    background-color: rgb(161, 51, 51);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    right: 0px;
+    bottom: 864px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  /* Style the dropdown button, hover over = change colour */
+  .dropdown button:hover{
+    background-color:rgb(139, 43, 43);
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    border-radius: 15px;
+  }
+  
+  /* Style the dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show the dropdown content when the button is clicked */
+  .dropdown.active .dropdown-content {
+    display: block;
+  }
+  
+  /* Style the close button */
+  .dropdown-content .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Overlay to fade out the background */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    opacity: 0;
+    pointer-events:none; /* Prevents overlay from blocking dropdown interaction */
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Overlay active state */
+  .dropdown.active ~ .overlay {
+    opacity: 1;
+    pointer-events:auto;
+  }
+  
+  /* Unique class for the dropdown overlay */
+  .dropdown-overlay {
+    z-index: 1;
+  }
+  
+  /* Adjust the stacking order of the dropdown content menu */
+  .dropdown.active .dropdown-content {
+    z-index: 4;
+  }

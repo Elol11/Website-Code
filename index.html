@@ -2,93 +2,153 @@
     <html>
         <head>
             <link rel="stylesheet" type="text/css" href="css/main.css"/>
+            <script src="JS/main.js"></script>
         </head>
             <body>
                 <div class="row">
-                    <div class="websitesearchbarbox">
-                        <div class="search-container">
-                            <form>
-                                <input class="SearchBarInput"placeholder="Search...">
-                            </form>
-                                <div class="SubmitButton">
-                                    <form>
-                                        <input class="SearchIcon" type="image" src="IMG/SearchIcon.png">
-                                    </form>
+                    <div class="switchbox">
+                        <!-- Dropdown container -->
+                    <div class="dropdown" id="myDropdown">
+                        <button onclick="toggleDropdown()">
+                            <img src="IMG/colour.png">
+                        </button>
+                        <!-- Dropdown content -->
+                        <div class="dropdown-content">
+                        <a href="#" style="background: #00b09b;" class="color-buttons" data-color="#00b09b"></a>
+                        <a href="#" style="background: #f12711;" class="color-buttons" data-color="#f12711"></a>
+                        <a href="#" style="background: #f5af19;" class="color-buttons" data-color="#f5af19"></a>
+                        <a href="#" style="background: #e52d27;" class="color-buttons" data-color="#e52d27"></a>
+                        <span class="close-btn" onclick="closeDropdown()">&times;</span>
+                        </div>
+                        </div>
+                        <!-- Overlay -->
+                        <div class="overlay dropdown-overlay"></div>
+                    </div>       
+                        <div class="websitesearchbarbox">
+                            <div class="search-container">
+                                <form action="https://www.google.com/search" method="get">
+                                    <input class="SearchBarInput"placeholder="Search...">
+                                </form>
+                                    <div class="SubmitButton">
+                                        <form action="https://www.google.com/search" method="get">
+                                            <input class="SearchIcon" type="image" src="IMG/SearchIcon.png">
+                                        </form>
+                                    </div> 
                                 </div> 
-                            </div> 
+                            </div>
                         </div>
-                    </div>
-                        <div class="row1">
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="#" class="logo">
-                                            <img src="IMG/threelines2.png" alt="">
-                                                <span class="nav-item">World Cars
-                                            </span>
-                                        </a>
-                                    </li>
-                                        <li>
-                                            <a href="#" class="logo">
-                                                <i class="fas fa-home">
-                                                    <img src="IMG/HomeBTN.webp" alt="">
-                                                    <span class="nav-item">Home
-                                                </span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fas fa-fastest-cars">
-                                                    <span class="nav-item">Fastest Cars
-                                                </span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fas fa-fastest-electric-cars">
-                                                    <span class="nav-item">Fastest Electric Cars
-                                                </span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fas fa-fastest-cars-0-60-(100 kph)">
-                                                    <span class="nav-item">Fastest Cars 0-60 mph (100 kph)
-                                                </span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fas fa-top-selling-cars">
-                                                    <span class="nav-item">Top Selling Cars
-                                                </span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fas fa-top-selling-electric-cars">
-                                                    <span class="nav-item">Top selling electric cars
-                                                </span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fas fa-other">
-                                                    <span class="nav-item">Other
-                                                </span>
-                                            </i>
-                                        </a>
-                                    </li>
-                                </ul>   
-                            </nav>
-                        </div>
-                    </div>      
-                </div>
+                            <div class="row1">
+                                <nav>
+                                    <ul>
+                                        <br>
+                                            <div class="navbox">
+                                                <a href="index.html" class="logo">
+                                                    <img src="IMG/threelines2.png" alt="">
+                                                        <span class="nav-item">World Cars 
+                                                    </span>
+                                                </a>
+                                            </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                    <div class="navbox">
+                                                        <a href="index.html" class="logo">
+                                                            <i class="home">
+                                                                <img src="IMG/HomeBTN.webp" alt="">
+                                                                    <span class="nav-item">Home
+                                                                </span>
+                                                            </i>
+                                                        </a>
+                                                    </div>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                            <div class="navbox">
+                                                                <a href="brands.html" class="logo">
+                                                                    <i class="brands">
+                                                                        <img src="IMG/car.png" alt="">
+                                                                            <span class="nav-item">Brands
+                                                                        </span>
+                                                                    </i>
+                                                                </a>
+                                                            </div>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                                    <div class="navbox">
+                                                                        <a href="gallery.html" class="logo">
+                                                                            <i class="gallery">
+                                                                                <img src="IMG/gallery.png" alt="">
+                                                                                    <span class="nav-item">Gallery
+                                                                                </span>
+                                                                            </i>
+                                                                        </a>
+                                                                    </div>
+                                                                        <br>
+                                                                        <br>
+                                                                        <br>
+                                                                            <div class="navbox">
+                                                                                <a href="videos.html" class="logo">
+                                                                                    <i class="videos">
+                                                                                        <img src="IMG/video.png" alt="">
+                                                                                            <span class="nav-item">Videos
+                                                                                        </span>
+                                                                                    </i>
+                                                                                </a>
+                                                                            </div>
+                                                                                <br>
+                                                                                <br>
+                                                                                <br>
+                                                                                    <div class="navbox">
+                                                                                        <a href="fastest-cars.html" class="logo">
+                                                                                            <i class="fastest-cars">
+                                                                                                <img src="IMG/speed.png" alt="">
+                                                                                                    <span class="nav-item">Fastest Cars
+                                                                                                </span>
+                                                                                            </i>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                        <br>
+                                                                                        <br>
+                                                                                        <br>
+                                                                                            <div class="navbox">
+                                                                                                <a href="top-selling-cars.html" class="logo">
+                                                                                                    <i class="top-selling-cars">
+                                                                                                        <img src="IMG/dollar.png" alt="">
+                                                                                                            <span class="nav-item">Top Selling Cars
+                                                                                                        </span>
+                                                                                                    </i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                                <br>
+                                                                                                <br>
+                                                                                                <br>
+                                                                                                    <div class="navbox">
+                                                                                                        <a href="other.html" class="logo">
+                                                                                                            <i class="other">
+                                                                                                                <img src="IMG/plus.jpg" alt="">
+                                                                                                                    <span class="nav-item">Other
+                                                                                                                </span>
+                                                                                                            </i>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </ul>   
+                                                                                            </nav>
+                                                                                        </div>
+                                                                                            <div class="row2">
+                                                                                                <div class="websitetextbox">
+                                                                                                    <h1 class="title">World Cars Website
+                                                                                                </h1>
+                                                                                                    <h2 class="intro">Introduction
+                                                                                                </h2>
+                                                                                                    <p1 class="introduction">This website purpose is to show up information about cars. The information this website holds is different car brands around the world, Prices of vehicles, speed of vehicles like their acceleration and top speed and finally a place for videos and photos about cars. 
+                                                                                                </p1>
+                                                                                            </div>
+                                                                                        </div>                                             
     </body>
 </html>
