@@ -15,6 +15,7 @@ body{
 
 nav{
     position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     height: 100%;
@@ -61,6 +62,7 @@ a:hover{
 nav:hover{
     width: 280px;
     transition: all 0.5s ease;
+    z-index: 4;
 }
 
 .row{
@@ -88,23 +90,27 @@ nav:hover{
     text-decoration: underline;
     font-weight: bold;
     font-size: 32px;
+    color: #000;
 }
 
 .intro{
     font-size: 24px;
     text-decoration: underline;
     font-weight: bold;
+    color: #000;
 }
 
 .introduction{
     text-align: justify;
     font-size: 18px;
+    color: #000;
 }
 
 .websitesearchbarbox{
     height:120px;
     width:100%;
     background-color: rgb(212, 64, 64);
+    padding-bottom: 10px;
 }
 
 .search-container{
@@ -112,18 +118,18 @@ nav:hover{
     width:40%;
     background-color: rgb(212, 64, 64);
     border-radius: 15px;
-    margin-top: 10px;
     margin-left: 30%;
 }
 
 .SearchBarInput{
     width:99%;
     height: 50px;
-    margin-top: 20px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    margin-top: 30px;
+    border: 0;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
     background-color: rgb(187, 60, 60);
     font-size: 20px;
     text-decoration-color: black;
@@ -139,8 +145,6 @@ nav:hover{
 
 .SubmitButton{
     border: 0;
-    padding: 0;
-    margin: 0;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -150,12 +154,13 @@ nav:hover{
     align-items: center;
     justify-content: center;
     position:absolute;
-    top: 32px;
-    right: 590px;
+    right: 30.5%;
+    top: 40px;
 }
 
 .SearchIcon{
     width: 25px;
+    border: 0;
 }
 
 .SubmitButton:hover{
@@ -178,6 +183,7 @@ nav:hover{
     right: 40px;
     background-color: #fff;
     display: flex;
+    margin-bottom: 15%;
 }
 
 .navbox:hover{
@@ -193,38 +199,38 @@ nav:hover{
     top: 35px;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 50%;
     z-index: index 0;
 }
 
 /* Center the dropdown container */
 .dropdown {
-    position: fixed;
     bottom: 0;
     right: 0;
     margin: 20px;
     z-index: 2;
   }
 
-  .dropdown img{
+.dropdown img{
     width: 40px;
     height: 40px;
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 10%;
+    top: 10%;
     pointer-events: none;
   }
   
   /* Style the button that toggles the dropdown */
-  .dropdown button {
+.dropdown button {
     background-color: rgb(161, 51, 51);
     color: white;
     padding: 10px;
     font-size: 16px;
     border: none;
     cursor: pointer;
-    right: 0px;
-    bottom: 864px;
+    right: 0%;
+    top: 0;
     position: absolute;
     width: 50px;
     height: 50px;
@@ -232,12 +238,12 @@ nav:hover{
   }
 
   /* Style the dropdown button, hover over = change colour */
-  .dropdown button:hover{
+.dropdown button:hover{
     background-color:rgb(139, 43, 43);
   }
   
   /* Style the dropdown content (hidden by default) */
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: fixed;
     top: 50%;
@@ -251,7 +257,7 @@ nav:hover{
   }
   
   /* Style the dropdown links */
-  .dropdown-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -259,17 +265,17 @@ nav:hover{
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #f1f1f1;
   }
   
   /* Show the dropdown content when the button is clicked */
-  .dropdown.active .dropdown-content {
+.dropdown.active .dropdown-content {
     display: block;
   }
   
   /* Style the close button */
-  .dropdown-content .close-btn {
+.dropdown-content .close-btn {
     position: absolute;
     top: 0;
     right: 0;
@@ -280,7 +286,7 @@ nav:hover{
   }
   
   /* Overlay to fade out the background */
-  .overlay {
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -294,17 +300,317 @@ nav:hover{
   }
   
   /* Overlay active state */
-  .dropdown.active ~ .overlay {
+.dropdown.active ~ .overlay {
     opacity: 1;
     pointer-events:auto;
   }
   
   /* Unique class for the dropdown overlay */
-  .dropdown-overlay {
+.dropdown-overlay {
     z-index: 1;
   }
   
   /* Adjust the stacking order of the dropdown content menu */
-  .dropdown.active .dropdown-content {
+.dropdown.active .dropdown-content {
     z-index: 4;
   }
+
+.alphabet_a{
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #000;
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 50%;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    vertical-align: middle;
+  }
+
+.cars_brands{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+
+.websitetextboxa{
+    height: 1100px;
+    width: 1600px;
+    background-color: White;
+    margin-left: 125px;
+    text-decoration: #000;
+    display: inline-flex;
+    justify-content: left;
+  }
+
+.websitetextboxb{
+    height: 1100px;
+    width: 1600px;
+    background-color: White;
+    margin-left: 125px;
+    text-decoration: #000;
+    display: inline-flex;
+    justify-content: left;
+    margin-top: 1200px;
+    position: absolute;
+  }
+
+.websitetextboxc{
+    height: 600px;
+    width: 1600px;
+    background-color: White;
+    margin-left: 125px;
+    text-decoration: #000;
+    display: inline-flex;
+    justify-content: left;
+    margin-top: 2300px;
+    position: absolute;
+  }
+
+.websitetextboxd{
+    height: 320px;
+    width: 425px;
+    background-color: rgb(225, 0, 255);
+    margin-left: 125px;
+    padding-right: 25px;
+    text-decoration: #000;
+  }
+
+.galleryintro{
+    width: 100%;
+    height:125px;
+    text-align: justify;
+    font-size: 30px;
+    color: #000;
+    text-decoration: underline;
+  }
+
+.photosbox{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+  }
+
+.photosbox1{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    left: 450px;
+    bottom: 1138px;
+  }
+
+.photosbox2{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    left: 900px;
+    bottom: 2315px;
+  }
+
+.photosbox3{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    left: 1350px;
+    bottom: 3520px;
+  }
+
+.photosbox4{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    bottom: 3200px;
+  }
+
+.photosbox5{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    left: 450px;
+    bottom: 4590px;
+  }
+
+.photosbox6{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    left: 900px;
+    bottom: 5650px;
+  }
+
+.photosbox7{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    left: 1350px;
+    bottom: 6710px;
+  }
+
+.photosbox8{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    bottom: 6200px;
+  }
+
+.photosbox9{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    left: 450px;
+    bottom: 7380px;
+  }
+
+.photosbox10{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    left: 900px;
+    bottom: 8357px;
+  }
+
+.photosbox11{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    left: 1350px;
+    bottom: 9395px;
+  }
+
+.carsimg{
+    width:100%;
+    height: auto;
+  }
+
+.videosintro{
+    width: 100%;
+    height:125px;
+    text-align: justify;
+    font-size: 30px;
+    color: #000;
+    text-decoration: underline;
+  }
+
+.video{
+    width: 420px;
+    height: 315px;
+    display: inline-block;
+  }
+
+.websitetextboxe{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 125px;
+    padding-right: 25px;
+    text-decoration: #000;
+  }
+
+.videobox{
+    width: 100%;
+    height: 800px;
+    margin-left: 125px;
+    background-color: aqua;
+    display: inline-block;
+    position: relative;
+    top: 150px;
+    right: 240px;
+  }
+
+.videobox1{
+    width: 100%;
+    height: 800px;
+    background-color: aqua;
+    display: inline-block;
+    position: relative;
+    top: 150px;
+    right: 220px;
+  }
+
+.videobox2{
+    width: 100%;
+    height: 800px;
+    background-color: aqua;
+    display: inline-block;
+    position: relative;
+    top: 150px;
+    right: 200px;
+  }
+
+.videobox3{
+    width: 100%;
+    height: 800px;
+    background-color: aqua;
+    display: inline-block;
+    position: relative;
+    top: 150px;
+    right: 180px;
+  }
+
+.websitetextbox10{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(0, 174, 255);
+    margin-left: 125px;
+    padding-right: 25px;
+    text-decoration: #000;
+  }
+
+.fastcarintro{
+    width: 100%;
+    height:125px;
+    text-align: justify;
+    font-size: 30px;
+    color: #000;
+    text-decoration: underline;
+  }
+
+.topimg{
+    width: 100%;
+    height: auto;
+}
+
+.imgcarbox{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(0, 255, 128);
+    padding: 20px;
+    float: left;
+    margin-left: 125px;
+}
+
+.cartextbox{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(255, 251, 0);
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    right: 5700px;
+}

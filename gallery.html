@@ -5,69 +5,43 @@
             <script src="JS/main.js"></script>
         </head>
             <body>
-                <div class="row">
-                    <div class="switchbox">
-                        <!-- Dropdown container -->
-                    <div class="dropdown" id="myDropdown">
-                        <button onclick="toggleDropdown()">
-                            <img src="IMG/colour.png">
-                        </button>
-                        <!-- Dropdown content -->
-                        <div class="dropdown-content">
-                        <a href="#" style="background: #00b09b;" class="color-buttons" data-color="#00b09b"></a>
-                        <a href="#" style="background: #f12711;" class="color-buttons" data-color="#f12711"></a>
-                        <a href="#" style="background: #f5af19;" class="color-buttons" data-color="#f5af19"></a>
-                        <a href="#" style="background: #e52d27;" class="color-buttons" data-color="#e52d27"></a>
-                        <span class="close-btn" onclick="closeDropdown()">&times;</span>
-                        </div>
-                        </div>
-                        <!-- Overlay -->
-                        <div class="overlay dropdown-overlay"></div>
-                    </div> 
-                    <div class="websitesearchbarbox">
-                        <div class="search-container">
-                            <form action="https://www.google.com/search" method="get">
-                                <input class="SearchBarInput"placeholder="Search...">
-                            </form>
-                                <div class="SubmitButton">
-                                    <form action="https://www.google.com/search" method="get">
-                                        <input class="SearchIcon" type="image" src="IMG/SearchIcon.png">
-                                    </form>
+                <div class="row">      
+                        <div class="websitesearchbarbox">
+                            <div class="search-container">
+                                <form action="https://www.google.com/search" method="get">
+                                    <input class="SearchBarInput"placeholder="Search...">
+                                        <div class="SubmitButton">
+                                            <form action="https://www.google.com/search" method="get">
+                                                <input class="SearchIcon" type="image" src="IMG/SearchIcon.png">
+                                            </form>
+                                        </div> 
+                                    </form>  
                                 </div> 
-                            </div> 
+                            </div>
                         </div>
-                    </div>
-                        <div class="row1">
-                            <nav>
-                                <ul>
-                                    <br>
-                                        <div class="navbox">
-                                            <a href="index.html" class="logo">
-                                                <img src="IMG/threelines2.png" alt="">
-                                                    <span class="nav-item">World Cars 
-                                                </span>
-                                            </a>
-                                        </div>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                                <div class="navbox">
-                                                    <a href="index.html" class="logo">
-                                                        <i class="home">
-                                                            <img src="IMG/HomeBTN.webp" alt="">
-                                                                <span class="nav-item">Home
-                                                            </span>
-                                                        </i>
-                                                    </a>
-                                                </div>
-                                                    <br>
-                                                    <br>
-                                                    <br>
+                            <div class="row1">
+                                <nav>
+                                    <ul>
+                                        <br>
+                                            <div class="navbox">
+                                                <a href="index.html" class="logo">
+                                                    <img src="IMG/threelines2.png" alt="">
+                                                        <span class="nav-item">World Cars 
+                                                    </span>
+                                                </a>
+                                            </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                    <div class="navbox">
+                                                        <a href="index.html" class="logo">
+                                                            <i class="home">
+                                                                <img src="IMG/HomeBTN.webp" alt="">
+                                                                    <span class="nav-item">Home
+                                                                </span>
+                                                            </i>
+                                                        </a>
+                                                    </div>
                                                         <div class="navbox">
                                                             <a href="brands.html" class="logo">
                                                                 <i class="brands">
@@ -77,68 +51,132 @@
                                                                 </i>
                                                             </a>
                                                         </div>
-                                                            <br>
-                                                            <br>
-                                                            <br>
+                                                            <div class="navbox">
+                                                                <a href="gallery.html" class="logo">
+                                                                    <i class="gallery">
+                                                                        <img src="IMG/gallery.png" alt="">
+                                                                            <span class="nav-item">Gallery
+                                                                        </span>
+                                                                    </i>
+                                                                </a>
+                                                            </div>
                                                                 <div class="navbox">
-                                                                    <a href="gallery.html" class="logo">
-                                                                        <i class="gallery">
-                                                                            <img src="IMG/gallery.png" alt="">
-                                                                                <span class="nav-item">Gallery
+                                                                    <a href="videos.html" class="logo">
+                                                                        <i class="videos">
+                                                                            <img src="IMG/video.png" alt="">
+                                                                                <span class="nav-item">Videos
                                                                             </span>
                                                                         </i>
                                                                     </a>
                                                                 </div>
-                                                                    <br>
-                                                                    <br>
-                                                                    <br>
+                                                                    <div class="navbox">
+                                                                        <a href="fastest-cars.html" class="logo">
+                                                                            <i class="fastest-cars">
+                                                                                <img src="IMG/speed.png" alt="">
+                                                                                    <span class="nav-item">Fastest Cars
+                                                                                </span>
+                                                                            </i>
+                                                                        </a>
+                                                                    </div>
                                                                         <div class="navbox">
-                                                                            <a href="videos.html" class="logo">
-                                                                                <i class="videos">
-                                                                                    <img src="IMG/video.png" alt="">
-                                                                                        <span class="nav-item">Videos
+                                                                            <a href="top-selling-cars.html" class="logo">
+                                                                                <i class="top-selling-cars">
+                                                                                    <img src="IMG/dollar.png" alt="">
+                                                                                        <span class="nav-item">Top Selling Cars
                                                                                     </span>
                                                                                 </i>
                                                                             </a>
                                                                         </div>
-                                                                            <br>
-                                                                            <br>
-                                                                            <br>
-                                                                                <div class="navbox">
-                                                                                    <a href="fastest-cars.html" class="logo">
-                                                                                        <i class="fastest-cars">
-                                                                                            <img src="IMG/speed.png" alt="">
-                                                                                                <span class="nav-item">Fastest Cars
-                                                                                            </span>
-                                                                                        </i>
-                                                                                    </a>
+                                                                            <div class="navbox">
+                                                                                <a href="other.html" class="logo">
+                                                                                    <i class="other">
+                                                                                        <img src="IMG/plus.jpg" alt="">
+                                                                                            <span class="nav-item">Other
+                                                                                        </span>
+                                                                                    </i>
+                                                                                </a>
+                                                                            </div>
+                                                                        </ul>   
+                                                                    </nav>
+                                                                </div>
+                                                                    <div class="row2">
+                                                                        <div class="websitetextbox">
+                                                                            <h1 class="galleryintro">
+                                                                                Gallery
+                                                                            </h1>
+                                                                                <div class="photosbox">
+                                                                                    <img src="IMG/10-porsche-718-cayman-gt4-rs-top-10.webp" class="carsimg" alt="">
+                                                                                    <img src="IMG/18015-MC20BluInfinito-scaled-e1666008987698.jpg" class="carsimg" alt="">
+                                                                                    <img src="IMG/99-best-luxury-cars-2023-bmw-i7-lead.webp" class="carsimg" alt="">
+                                                                                    <img src="IMG/119308478.jpg" class="carsimg" alt="">
                                                                                 </div>
-                                                                                    <br>
-                                                                                    <br>
-                                                                                    <br>
-                                                                                        <div class="navbox">
-                                                                                            <a href="top-selling-cars.html" class="logo">
-                                                                                                <i class="top-selling-cars">
-                                                                                                    <img src="IMG/dollar.png" alt="">
-                                                                                                        <span class="nav-item">Top Selling Cars
-                                                                                                    </span>
-                                                                                                </i>
-                                                                                            </a>
+                                                                                    <div class="photosbox1">
+                                                                                        <img src="IMG/Bugatti Chiron Super Sport 300+.webp" class="carsimg" alt="">
+                                                                                        <img src="IMG/2023-mclaren-artura-101-1655218102.jpg" class="carsimg" alt="">
+                                                                                        <img src="IMG/nissanz2023-1673297639.jpeg" class="carsimg" alt="">
+                                                                                        <img src="IMG/rs-2024-chevrolet-corvette-e-ray-3lz-006.webp" class="carsimg" alt="">
+                                                                                    </div>
+                                                                                        <div class="photosbox2">
+                                                                                            <img src="IMG/dodge_challenger_1970_pictures_1.jpg" class="carsimg" alt="">
+                                                                                            <img src="IMG/rangerover.jpg" class="carsimg" alt="">
+                                                                                            <img src="IMG/meganeelectric_100.jpeg" class="carsimg" alt="">
+                                                                                            <img src="IMG/23Bmw2se218MSpo4drRedFR1_800.jpg" class="carsimg" alt="">
                                                                                         </div>
-                                                                                            <br>
-                                                                                            <br>
-                                                                                            <br>
-                                                                                                <div class="navbox">
-                                                                                                    <a href="other.html" class="logo">
-                                                                                                        <i class="other">
-                                                                                                            <img src="IMG/plus.jpg" alt="">
-                                                                                                                <span class="nav-item">Other
-                                                                                                            </span>
-                                                                                                        </i>
-                                                                                                    </a>
+                                                                                            <div class="photosbox3">
+                                                                                                <img src="IMG/10-porsche-911-top-10.webp" class="carsimg" alt="">
+                                                                                                <img src="IMG/p90475606-highres-rolls-royce-phantom-1677268219.jpg" class="carsimg" alt="">
+                                                                                                <img src="IMG/1_0x0_790x520_0x520_fastest-electric-cars-2022-rimac-nevera.jpg" class="carsimg" alt="">
+                                                                                                <img src="IMG/best cars to buy for £50,000-5.jpg" class="carsimg" alt="">
+                                                                                            </div>
+                                                                                                <div class="photosbox4">
+                                                                                                    <img src="IMG/hero-1-1920.jpg" class="carsimg" alt="">
+                                                                                                    <img src="IMG/557600-tesla-baisse-ses-prix-et-la-model-3-a-droit-a-tous-les-rabais.jpg" class="carsimg" alt="">
+                                                                                                    <img src="IMG/Polo Mob.webp" class="carsimg" alt="">
+                                                                                                    <img src="IMG/117123632.jpg" class="carsimg" alt="">
                                                                                                 </div>
-                                                                                            </ul>   
-                                                                                        </nav>
-                                                                                    </div>                                                              
+                                                                                                    <div class="photosbox5">
+                                                                                                        <img src="IMG/cupra-ateca-large.webp" class="carsimg" alt="">
+                                                                                                        <img src="IMG/RA16XDG-used-DS-DS-3-HATCHBACK-12-PureTech-Elegance-3dr-petrol-BLUE-2016-HR-M-01.jpg" class="carsimg" alt="">
+                                                                                                        <img src="IMG/1920x1080_bentayga_ewb_2.jpg" class="carsimg" alt="">
+                                                                                                        <img src="IMG/d03349785f3642618ee1cd6e321155d4.jpg" class="carsimg" alt="">
+                                                                                                    </div>
+                                                                                                        <div class="photosbox6">
+                                                                                                            <img src="IMG/220822155902-01-new-delorean-2022.jpg" class="carsimg" alt="">
+                                                                                                            <img src="IMG/2d95d3bcf83f9bc7cc503a7747804b86.jpg" class="carsimg" alt="">
+                                                                                                            <img src="IMG/ford-fiesta-15-1.jpg" class="carsimg" alt="">
+                                                                                                            <img src="IMG/638924.jpg" class="carsimg" alt="">
+                                                                                                        </div>
+                                                                                                            <div class="photosbox7">
+                                                                                                                <img src="IMG/zenos_e10_s_new.jpg" class="carsimg" alt="">
+                                                                                                                <img src="IMG/567681-lamborghini-revuelto-une-nouvelle-bombe-hybride-de-1001-chevaux.jpeg" class="carsimg" alt="">
+                                                                                                                <img src="IMG/9_1.jpg" class="carsimg" alt="">
+                                                                                                                <img src="IMG/3r4yasgb2sx3_800.jpg" class="carsimg" alt="">
+                                                                                                            </div>
+                                                                                                                <div class="photosbox8">
+                                                                                                                    <img src="IMG/im-428700.jpeg" class="carsimg" alt="">
+                                                                                                                    <img src="IMG/Mclaren-Solus-GT-14.jpg" class="carsimg" alt="">
+                                                                                                                    <img src="IMG/cd6bcf83-9b87-431a-9d80-6afd330d9d3b_28787-AudiA850L7.avif" class="carsimg" alt="">
+                                                                                                                    <img src="IMG/Bugatti-Bolide-Hypercar-resize.jpg" class="carsimg" alt="">
+                                                                                                                </div>
+                                                                                                                    <div class="photosbox9">
+                                                                                                                        <img src="IMG/praga-r1.jpg" class="carsimg" alt="">
+                                                                                                                        <img src="IMG/bugatti-mistral-roadster-101-1660658847.jpg" class="carsimg" alt="">
+                                                                                                                        <img src="IMG/hero-1-1920 (1).jpg" class="carsimg" alt="">
+                                                                                                                        <img src="IMG/stable-diffusion-dont-like-cars-v0-frw8ssytlaaa1.webp" class="carsimg" alt="">
+                                                                                                                    </div>
+                                                                                                                        <div class="photosbox10">
+                                                                                                                            <img src="IMG/best_electric_2022.jpg" class="carsimg" alt="">
+                                                                                                                            <img src="IMG/7manu2019-aston-martin-dbs-superleggera-104-1533062188.jpg" class="carsimg" alt="">
+                                                                                                                            <img src="IMG/81f9820b1c254874957fd412017443f4-3db95e4579c94a32aef39532ada8ce17-0_1582882048307_1643968615286.jpg" class="carsimg" alt="">
+                                                                                                                            <img src="IMG/Chevrolet-Corvette-Stingray-near-Kansas-City.jpg" class="carsimg" alt="">
+                                                                                                                        </div>
+                                                                                                                            <div class="photosbox11">
+                                                                                                                                <img src="IMG/1_0x0_790x520_0x520_best-ev-sports-cars-audi-rs-g-tron-gt.jpg" class="carsimg" alt="">
+                                                                                                                                <img src="IMG/images.jpeg" class="carsimg" alt="">
+                                                                                                                                <img src="IMG/polestar-2-black-driving-front-lead-1.jpg" class="carsimg" alt="">
+                                                                                                                                <img src="IMG/mejores-lamborghinis-9-9-19-feat-780x470.webp" class="carsimg" alt="">
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>                                             
     </body>
 </html>
